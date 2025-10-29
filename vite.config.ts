@@ -18,6 +18,17 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      build: {
+        rollupOptions: {
+          output: {
+            manualChunks: {
+              vendor: ['react', 'react-dom'],
+            }
+          }
+        },
+        chunkSizeWarningLimit: 1000,
+        assetsInlineLimit: 0, // Don't inline assets
       }
     };
 });

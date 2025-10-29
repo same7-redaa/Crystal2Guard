@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/LOGO.png" />
     <title>Crystal Guard - Luxury Surface Protection</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/hero1.png" as="image" />
+    <link rel="preload" href="/LOGO.png" as="image" />
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +40,12 @@
       
       html {
         scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      
+      body {
+        overflow-x: hidden;
+        transition: overflow 0.3s ease;
       }
       
       img, video {
@@ -44,6 +55,17 @@
       
       * {
         -webkit-tap-highlight-color: transparent;
+      }
+      
+      /* تحسين الأداء للصور */
+      img {
+        content-visibility: auto;
+      }
+      
+      /* منع التقطيع أثناء التمرير */
+      * {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
       }
       
       /* Marble background removed for performance */

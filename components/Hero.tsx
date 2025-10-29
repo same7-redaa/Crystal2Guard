@@ -32,7 +32,8 @@ const Hero: React.FC = () => {
             className="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out"
             style={{ 
               backgroundImage: `url(${src})`,
-              opacity: index === currentImageIndex ? 1 : 0
+              opacity: index === currentImageIndex ? 1 : 0,
+              willChange: 'opacity'
             }}
           />
         ))}

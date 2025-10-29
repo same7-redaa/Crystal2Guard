@@ -75,7 +75,8 @@ const BeforeAfter: React.FC = memo(() => {
               alt={t('beforeAfter', 'after')}
               className="w-full h-auto block"
               draggable={false}
-              loading="eager"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute bottom-4 right-4 rtl:right-auto rtl:left-4 bg-green-600 text-white px-4 py-2 rounded-lg font-bold text-sm sm:text-base shadow-lg">
               {t('beforeAfter', 'after')}
@@ -97,7 +98,8 @@ const BeforeAfter: React.FC = memo(() => {
                 width: containerRef.current ? `${(containerRef.current.offsetWidth / sliderPosition) * 100}%` : '100%'
               }}
               draggable={false}
-              loading="eager"
+              loading="lazy"
+              decoding="async"
             />
             <div className="absolute bottom-4 left-4 rtl:left-auto rtl:right-4 bg-red-600 text-white px-4 py-2 rounded-lg font-bold text-sm sm:text-base shadow-lg">
               {t('beforeAfter', 'before')}

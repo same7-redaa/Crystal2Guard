@@ -5,7 +5,7 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 const socialIcons = [
     { icon: <PhoneIcon />, href: 'tel:+966561361665', bgColor: 'bg-blue-600 hover:bg-blue-700' },
-    { icon: <EmailIcon />, href: 'mailto:info@crystalguard.com', bgColor: 'bg-gray-700 hover:bg-gray-800' },
+    { icon: <EmailIcon />, href: 'mailto:info@crystal-guard-sa.com', bgColor: 'bg-gray-700 hover:bg-gray-800' },
     { icon: <WhatsAppIcon />, href: 'https://wa.me/966561361665', bgColor: 'bg-[#25D366] hover:bg-[#1eaa52]' },
     { icon: <FacebookIcon />, href: 'https://www.facebook.com/crystal.guard.sa/', bgColor: 'bg-[#1877F2] hover:bg-[#145dbf]' },
     { icon: <InstagramIcon />, href: 'https://www.instagram.com/crystal.guard.sa/', bgColor: 'bg-gradient-to-br from-[#833AB4] via-[#E1306C] to-[#FD1D1D] hover:opacity-90' },
@@ -68,8 +68,8 @@ const Contact: React.FC = () => {
           
           <div className="text-center p-6 bg-gray-800/50 rounded-2xl border border-gray-700">
             <h3 className="text-white font-bold text-xl mb-3">{t('contact', 'emailTitle')}</h3>
-            <a href="mailto:info@crystalguard.com" className="text-gray-300 hover:text-red-500 transition-colors text-lg break-all">
-              info@crystalguard.com
+            <a href="mailto:info@crystal-guard-sa.com" className="text-gray-300 hover:text-red-500 transition-colors text-lg break-all">
+              info@crystal-guard-sa.com
             </a>
           </div>
           
